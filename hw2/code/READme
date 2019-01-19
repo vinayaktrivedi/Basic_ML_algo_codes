@@ -1,0 +1,19 @@
+The ZIP file contains two python scripts - generative.py and generative_v2.py.
+
+#First script runs on the dataset binclass.txt while second one runs on binclassv2.txt
+
+#Both the datafiles must be in the same directory as the python scripts else the script will fail
+
+#The script computes the decision boundary for unequal and equal covariance case, and plots the boundary with classes, and saves the plot in the same directory as the script.
+
+#Sklearn library is used for implementing linear SVM, make sure it is installed.
+
+#In order to run the scripts, simply run python {filename.py} in the shell with no command line arguments or inputs.
+
+#Numpy, matplotlib, csv libraries are also dependencies of this script.
+
+#Each script saves three figures in the directory, named according to their case, generative with unequal variance, generative with equal variance and of linear SVM.
+
+#Hence after running both scripts, there should be total 6 figures in the directory. 
+
+

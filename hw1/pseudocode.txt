@@ -1,0 +1,32 @@
+What's written below isn't exactly a "pseudo-code" but a summary of the procedure to follow for your implementation.
+
+Method 1
+=========
+
+- Compute the mean of each seen class.
+
+- Compute the similarity (dot product based) of each unseen class with each of the seen classes.
+
+- Normalize the similarity vector (to that it sums to 1, since we are using a convex combination).
+
+- Compute the mean of each unseen class using a convex combination of means of seen classes.
+
+- Apply the model to predict labels on unseen class test inputs.
+
+- Compute classification accuracies.
+
+
+Method 2
+========
+
+- Compute the mean of each seen class.
+
+- Learn the multi-output regression model with class attribute vector being the input and the class mean vector being the output (this will use the seen class attributes and their mean vectors).
+
+- Apply the learned regression model to compute the mean of each unseen class.
+
+- Apply the model to predict labels on unseen class test inputs.
+
+- Compute classification accuracies.
+
+- Note: You need to try several values of the regularization hyperparameter \lambda

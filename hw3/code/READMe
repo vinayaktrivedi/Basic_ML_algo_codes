@@ -1,0 +1,20 @@
+#There are two folders, problem 1 contains the script kernel_ridge.py which does kernel regression for Programming problem 1 part a, and landmark_ridge.py which does same but which landmarks based approach
+
+#problem 1 contains the plots for both parts of problem 1. plots with kernel_ridge*.png are plots of kernel regression based on different hyperparametrs. value of hyperparameter is appended in mae. 
+#similarly plots with name landmark_ridge_*.png are plots with landmark approach to do ridge regression. value of number of landmarks is appended in the name of the plot. 
+
+#problem 2 contains the script cluster_hand.py which uses the transformation (x,y) to (sqrt(x**2+y**2),0) to do clustering, since this transformation separates the clusters linearly. plot cluster_hand.png shows the clustering plot of part a
+
+#problem 2 folder also contains the script cluster_kenrel.py which does clustering based on landmarks approach. The plots cluster_kernel_*.png are clustering plots for corresponding iteration of trial. 
+
+#The scripts make use of library matplotlib and numpy. These should be installed in the system
+
+#The plots are saved withg the naming convention specified above. 
+
+#See the code comments for implementation details
+
+#The data files must be present in the same directory as the script else the script will fail
+  
+#problem 1 folder contains the file result_ridge_kernel.txt which contains the RSME error of corresponding hyperparameter (each row for differnet parameter). Simiarly result_ridge_landmark.txt contains the RSME error for different value of landmarks (each row for different landmark)
+
+#The plots are attached in the main write-up too. After running the scripts, it prints the RMSE error on console and saves the plots in the same directory as script is runnig. 
